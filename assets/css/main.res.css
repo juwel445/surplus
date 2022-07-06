@@ -1,0 +1,316 @@
+@media screen and (min-width: 576px) {
+  /* reboot bootstrap */
+  .container {
+    max-width: 1196px;
+  }
+
+  .container-xl {
+    max-width: 1364px;
+  }
+
+  /* custom styles */
+  .title-1 {
+    font-size: 2.75rem;
+  }
+
+  .title-2 {
+    font-size: 2rem;
+  }
+
+  .title-3 {
+    font-size: 1.5rem;
+  }
+
+  .title-4 {
+    font-size: 1.375rem;
+  }
+
+  /* consider crypto */
+  .crypto-block .title-6 {
+    font-size: 1.125rem;
+  }
+
+  .crypto-block-list .crypto-block:nth-of-type(1) .title-6::before,
+  .crypto-block-list .crypto-block:nth-of-type(3) .title-6::before {
+    width: 234px;
+    height: 78px;
+  }
+
+  /* how it works */
+  .how-it-works .card .card-body .title-6 {
+    font-size: 1.125rem;
+  }
+
+  .how-it-works .card .card-body .text-5 {
+    font-size: 0.875rem;
+  }
+
+  .how-it-works .section-img {
+    margin-bottom: 80px;
+  }
+
+  .how-it-works .section-img > img {
+    max-width: 70%;
+  }
+
+  .how-it-works .section-img .card {
+    width: 65%;
+    left: 25%;
+    bottom: -5rem;
+  }
+
+  .how-it-works .section-img .card-body {
+    gap: 1.5rem;
+    padding: 1.875rem 1.5rem;
+  }
+
+  .how-it-works .section-img .icon svg {
+    height: 2.5rem;
+  }
+
+  .how-it-works .section-img .title-6 {
+    font-size: 1.125rem !important;
+  }
+
+  .how-it-works .section-img .text-5 {
+    font-size: 0.875rem !important;
+  }
+
+  /* security  */
+  .security .card .text-5 {
+    font-size: 1rem;
+  }
+
+  /* testimonial */
+  .testimonial-splider .card .icon {
+    top: 2rem;
+    left: 3rem;
+  }
+
+  .testimonial-splider .card .icon > svg {
+    max-width: 83px;
+  }
+
+  .testimonial-splider .text-6 {
+    font-size: 1rem;
+  }
+
+  .testimonial-splider .splide__track {
+    padding-bottom: 3rem;
+  }
+
+  .testimonial-splider .is-active {
+    box-shadow: 0px 39.5463px 79.0927px rgba(15, 33, 55, 0.06);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* custom styles */
+  .section {
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+
+  .title-1 {
+    font-size: 3.125rem;
+  }
+
+  .title-2 {
+    font-size: 2.5rem;
+    margin-bottom: 3.75rem;
+  }
+
+  .title-3 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .title-4 {
+    font-size: 1.5rem;
+  }
+
+  .title-5 {
+    font-size: 1.25rem;
+  }
+
+  .title-6 {
+    font-size: 1.125rem;
+  }
+
+  .text-3 {
+    font-size: 1.125rem;
+  }
+
+  .surplus-btn {
+    font-size: 1.125rem;
+    padding: 1.275rem 3.75rem;
+  }
+
+  /* consider crypto */
+  .crypto-block-list .crypto-block:nth-of-type(1) .title-6::before,
+  .crypto-block-list .crypto-block:nth-of-type(3) .title-6::before {
+    width: 61%;
+    height: 130px;
+    bottom: 100%;
+  }
+
+  /* stats */
+  .stats .title-2 {
+    margin-bottom: 5rem;
+  }
+
+  .output__calc {
+    padding: 30px 40px;
+    font-size: 1.5rem;
+    max-width: 295px;
+  }
+
+  /* how it works */
+  .how-it-works .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* security */
+  .security .icon img {
+    height: 3.25rem;
+  }
+
+  /* crypto-industry */
+  .crypto-industry .list-items {
+    display: grid;
+    grid-template-areas: "item1 item4" "item2 item5" "item3 item6";
+    gap: 1.5rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .crypto-industry .list-items .item:nth-of-type(1) {
+    grid-area: item1;
+  }
+
+  .crypto-industry .list-items .item:nth-of-type(2) {
+    grid-area: item2;
+  }
+
+  .crypto-industry .list-items .item:nth-of-type(3) {
+    grid-area: item3;
+  }
+
+  .crypto-industry .list-items .item:nth-of-type(4) {
+    grid-area: item4;
+  }
+
+  .crypto-industry .list-items .item:nth-of-type(5) {
+    grid-area: item5;
+  }
+
+  .crypto-industry .list-items .item:nth-of-type(6) {
+    grid-area: item6;
+  }
+
+  .crypto-industry .list-items .item .text-4 {
+    font-size: 1rem;
+  }
+
+  .crypto-industry .list-items .item {
+    gap: 1.5rem;
+  }
+
+  .crypto-industry .list-items .item::before {
+    font-size: 1.875rem;
+    width: 72px;
+    height: 72px;
+  }
+
+  /* footer */
+  .footer-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .item-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* stats */
+  .wrapper__calc {
+    max-width: 921px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* how it works */
+  .how-it-works .section-img .card {
+    bottom: 2.5rem;
+  }
+
+  /*investment  */
+  .investment .section-img {
+    transform: scale(1);
+    margin: auto;
+  }
+
+  /* testimonial */
+  .testimonial-splider .card .icon {
+    left: 1rem;
+  }
+
+  /* integrity */
+  .section-img-end-auto > img {
+    margin-left: unset;
+  }
+
+  .section-img-start-auto > img {
+    margin-right: unset;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* reboot bootstrap */
+  .container,
+  .container-xl {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  /* how it works */
+  .how-it-works .section-img .card {
+    width: 400px;
+  }
+
+  /* testimonial */
+  .testimonial-splider .card .icon {
+    left: 3rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+}
+
+@media only screen and (max-width: 500px) {
+  .bar {
+    width: 30px;
+    font-size: 12px;
+  }
+
+  .img__box {
+    top: 0px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .bar {
+    width: 24px;
+    font-size: 10px;
+    padding: 0px;
+  }
+
+  .bar__text {
+    writing-mode: vertical-lr;
+  }
+}
