@@ -211,7 +211,21 @@ body {
 }
 .banner__right_area{
   flex: 0 0 50%;
+  position: relative;
+  z-index: 1;
 }
+.banner__right_area::after {
+  content: "";
+  position: absolute;
+  width: 720px;
+  height: 720px;
+  background: #675EA4;
+  border-radius: 50%;
+  right: -50%;
+  top: 38px;
+  z-index: -1;
+}
+
 .banner_right_img {
   width: 100%;
   max-width: 600px;
@@ -242,9 +256,6 @@ body {
   text-transform: uppercase;
   color: #42368E;
 }
-.banner__images_area {
-  margin-left: 45px;
-}
 .banner__heading h1 {
   font-style: normal;
   font-weight: 700;
@@ -263,7 +274,10 @@ body {
   width: 100%;
   height: auto;
 }
+.banner__images_area {
+  margin-left: 45px;
 
+}
 
 
 
