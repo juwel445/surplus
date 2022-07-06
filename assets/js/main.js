@@ -160,15 +160,55 @@ y = number of years
   });
 };
 
+// toggle menu
+GLOB.toggleMenu = function () {
+  const menuButton = document.getElementById("menu-toggler");
+  const menu = document.getElementById("mobile-menu");
+
+  function changeState(event) {
+    event.preventDefault();
+
+    if (menu.classList.contains("mobile-menu")) {
+      this.classList.remove("active");
+      menu.classList.remove("mobile-menu");
+    } else {
+      this.classList.add("active");
+      menu.classList.add("mobile-menu");
+    }
+  }
+
+  menuButton.addEventListener("click", changeState);
+};
+
+// scolled header
+GLOB.scrolledHeader = function () {
+  const header = document.getElementById("header-main");
+  const pos = window.scrollY;
+
+  console.log(pos);
+
+  if (pos > 0) {
+    if (!header.classList.contains("scrolled")) {
+      header.classList.add("scrolled");
+    }
+  } else {
+    header.classList.remove("scrolled");
+  }
+};
+
 // document on load
 document.addEventListener("DOMContentLoaded", function () {
   GLOB.testimonialSplider();
   GLOB.strategySplider();
   GLOB.partnersSplider();
   GLOB.statCalculator();
+  GLOB.toggleMenu();
 });
 
 // document on scroll
+window.addEventListener("scroll", function () {
+  GLOB.scrolledHeader();
+});
 
 // document on resize
 window.addEventListener("resize", function () {
