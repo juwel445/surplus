@@ -193,6 +193,12 @@ body {
 }
 
 /*start banner main area css*/
+
+.banner__main_area {
+  margin-bottom: -10px;
+  position: relative;
+  z-index: 1;
+}
 .banner_content_area {
   display: flex;
   flex-wrap: wrap;
@@ -209,10 +215,11 @@ body {
 .banner_right_img {
   width: 100%;
   max-width: 600px;
+  height: 680px;
 }
 .banner_right_img img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   object-fit: cover;
 }
@@ -247,6 +254,10 @@ body {
   color: #0F2137;
   margin: 18px 0 20px 0;
 }
+.banner__feature{
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
 .banner__feature a img {
   max-width: 188px;
   width: 100%;
@@ -264,8 +275,9 @@ body {
   background-color: var(--title-grad-1, #42368e);
   padding-top: 2rem;
   padding-bottom: 2rem;
+  position: relative;
+  z-index: 2;
 }
-
 .partners-splide .splide__slide {
   display: flex;
   align-items: center;
